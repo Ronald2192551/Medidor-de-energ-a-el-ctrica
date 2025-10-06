@@ -1,0 +1,19 @@
+* source PRUEBA_PROJECT
+R_R1         N14420 N14416  7.1k TC=0,0 
+R_R2         0 N14454  5m TC=0,0 
+V_V1         VCC 0 DC 3.3  
+V_V2         0 VEE DC 3.3  
+R_R3         N16620 N16616  330k TC=0,0 
+R_R4         N16624 N16620  330k TC=0,0 
+R_R5         N16628 N16624  330k TC=0,0 
+R_R6         0 N16628  5.87k TC=0,0 
+R_R7         N16949 N16628  1k TC=0,0 
+R_R8         N16961 0  1k TC=0,0 
+C_C2         N16961 N16949  10nF  TC=0,0 
+R_R9         N14454 N16616  12 TC=0,0 
+V_V5         N16616 0  
++SIN 0 170 60 0 0 0
+R_R11         N21020 0  1k TC=0,0 
+R_R10         VOUT N21387  1k TC=0,0 
+C_C5         N21020 VOUT  10nF  TC=0,0 
+X_U3         N14454 0 VCC VEE N21387 0 N14416 N14420 INA333

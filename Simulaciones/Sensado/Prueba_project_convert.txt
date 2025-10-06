@@ -1,0 +1,9 @@
+The conversion of the project was successful.
+
+The new directory structure is as follows:
+
+C:/Users/Ronal/Downloads/Proyecto Diseño/Simulaciones/Sensado/1
+    Prueba_project.opj
+    prueba_project.dsn
+C:/Users/Ronal/Downloads/Proyecto Diseño/Simulaciones/Sensado/1/Prueba_project-PSpiceFiles
+C:/Users/Ronal/Downloads/Proyecto Diseño/Simulaciones/Sensado/1/Prueba_project-PSpiceFiles/SCHEMATIC1

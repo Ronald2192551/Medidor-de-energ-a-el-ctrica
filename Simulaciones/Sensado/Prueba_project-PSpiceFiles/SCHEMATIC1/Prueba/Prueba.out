@@ -1,0 +1,555 @@
+
+**** 10/06/25 15:45:10 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Prueba"  [ C:\Users\Ronal\Downloads\Proyecto Diseño\Simulaciones\Sensado\1\Prueba_project-PSpiceFiles\SCHEMA
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Prueba.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of D:\Cadence\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "C:\Users\Ronal\Downloads\INA333.LIB" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 50m 0 10u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PRUEBA_PROJECT
+R_R1         N14420 N14416  7.1k TC=0,0 
+R_R2         0 N14454  5m TC=0,0 
+V_V1         VCC 0 DC 3.3  
+V_V2         0 VEE DC 3.3  
+R_R3         N16620 N16616  330k TC=0,0 
+R_R4         N16624 N16620  330k TC=0,0 
+R_R5         N16628 N16624  330k TC=0,0 
+R_R6         0 N16628  5.87k TC=0,0 
+R_R7         N16949 N16628  1k TC=0,0 
+R_R8         N16961 0  1k TC=0,0 
+C_C2         N16961 N16949  10nF  TC=0,0 
+R_R9         N14454 N16616  12 TC=0,0 
+V_V5         N16616 0  
++SIN 0 170 60 0 0 0
+R_R11         N21020 0  1k TC=0,0 
+R_R10         VOUT N21387  1k TC=0,0 
+C_C5         N21020 VOUT  10nF  TC=0,0 
+X_U3         N14454 0 VCC VEE N21387 0 N14416 N14420 INA333
+
+**** RESUMING Prueba.cir ****
+.END
+
+**** 10/06/25 15:45:10 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Prueba"  [ C:\Users\Ronal\Downloads\Proyecto Diseño\Simulaciones\Sensado\1\Prueba_project-PSpiceFiles\SCHEMA
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.R_NOISELESS 
+  T_Measured   27            
+   T_Current -273.15         
+           R    1            
+
+
+               X_U3.XA1.R_NOISELESS 
+  T_Measured   27            
+   T_Current -273.15         
+           R    1            
+
+
+               X_U3.XA2.R_NOISELESS 
+  T_Measured   27            
+   T_Current -273.15         
+           R    1            
+
+
+               X_U3.XA3.R_NOISELESS 
+  T_Measured   27            
+   T_Current -273.15         
+           R    1            
+
+
+               X_U3.XA1.XU1.R_NOISELESS 
+  T_Measured   27            
+   T_Current -273.15         
+           R    1            
+
+
+               X_U3.XA1.XU2.R_NOISELESS 
+  T_Measured   27            
+   T_Current -273.15         
+           R    1            
+
+
+               X_U3.XA1.XU3.R_NOISELESS 
+  T_Measured   27            
+   T_Current -273.15         
+           R    1            
+
+
+               X_U3.XA2.XU1.R_NOISELESS 
+  T_Measured   27            
+   T_Current -273.15         
+           R    1            
+
+
+               X_U3.XA2.XU2.R_NOISELESS 
+  T_Measured   27            
+   T_Current -273.15         
+           R    1            
+
+
+               X_U3.XA2.XU3.R_NOISELESS 
+  T_Measured   27            
+   T_Current -273.15         
+           R    1            
+
+
+               X_U3.XA3.XU1.R_NOISELESS 
+  T_Measured   27            
+   T_Current -273.15         
+           R    1            
+
+
+               X_U3.XA3.XU2.R_NOISELESS 
+  T_Measured   27            
+   T_Current -273.15         
+           R    1            
+
+
+               X_U3.XA3.XU3.R_NOISELESS 
+  T_Measured   27            
+   T_Current -273.15         
+           R    1            
+
+
+**** 10/06/25 15:45:10 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Prueba"  [ C:\Users\Ronal\Downloads\Proyecto Diseño\Simulaciones\Sensado\1\Prueba_project-PSpiceFiles\SCHEMA
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.XA1.S_VSWITCH_1 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON     .9          
+        VOFF     .8          
+
+
+               X_U3.XA2.S_VSWITCH_1 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON     .9          
+        VOFF     .8          
+
+
+               X_U3.XA3.S_VSWITCH_1 
+         RON   50            
+        ROFF    1.000000E+12 
+         VON     .5          
+        VOFF     .45         
+
+
+               X_U3.XA3.S_VSWITCH_2 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON     .9          
+        VOFF     .8          
+
+
+               X_U3.XA3.S_VSWITCH_3 
+         RON     .01         
+        ROFF    1.000000E+09 
+         VON     .01         
+        VOFF    0            
+
+
+               X_U3.XA1.XU5.S_VSWITCH_1 
+         RON   50            
+        ROFF    1.000000E+12 
+         VON     .7          
+        VOFF     .6          
+
+
+               X_U3.XA1.XU5.S_VSWITCH_2 
+         RON   50            
+        ROFF    1.000000E+12 
+         VON     .5          
+        VOFF     .45         
+
+
+               X_U3.XA2.XU5.S_VSWITCH_1 
+         RON   50            
+        ROFF    1.000000E+12 
+         VON     .7          
+        VOFF     .6          
+
+
+               X_U3.XA2.XU5.S_VSWITCH_2 
+         RON   50            
+        ROFF    1.000000E+12 
+         VON     .5          
+        VOFF     .45         
+
+
+               X_U3.XA3.XU5.S_VSWITCH_1 
+         RON   50            
+        ROFF    1.000000E+12 
+         VON     .7          
+        VOFF     .6          
+
+
+               X_U3.XA3.XU5.S_VSWITCH_2 
+         RON   50            
+        ROFF    1.000000E+12 
+         VON     .5          
+        VOFF     .45         
+
+
+**** 10/06/25 15:45:10 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Prueba"  [ C:\Users\Ronal\Downloads\Proyecto Diseño\Simulaciones\Sensado\1\Prueba_project-PSpiceFiles\SCHEMA
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VCC)    3.3000  (  VEE)   -3.3000  ( VOUT) 182.0E-06  (N14416) 11.10E-06     
+
+(N14420) 1.097E-06 (N14454)-349.9E-15 (N16616)    0.0000 (N16620)    0.0000     
+
+(N16624)    0.0000 (N16628)    0.0000 (N16949)    0.0000 (N16961)    0.0000     
+
+(N21020)    0.0000 (N21387) 182.0E-06 (X_U3.13)    0.0000                       
+
+(X_U3.14)   -3.3000                   (X_U3.15)   -3.3000                       
+
+(X_U3.16)    3.3000                   (X_U3.17)    3.3000                       
+
+(X_U3.MID)    0.0000                  (X_U3.IN+_10) 4.500E-06                   
+
+(X_U3.IN+_12)-5.500E-06               (X_U3.IN+_20) 33.76E-06                   
+
+(X_U3.IN-_19) 59.86E-06               (X_U3.OUT_11) 78.02E-06                   
+
+(X_U3.OUT_18)-72.82E-06               (X_U3.XA1.34) 1.097E-06                   
+
+(X_U3.XA1.35)-5.500E-06               (X_U3.XA1.36)   -3.2700                   
+
+(X_U3.XA1.37)    3.2700               (X_U3.XA1.43)-2.363E-06                   
+
+(X_U3.XA1.44)-72.82E-06               (X_U3.XA1.47)    0.0000                   
+
+(X_U3.XA1.48)    0.0000               (X_U3.XA1.49)-5.500E-06                   
+
+(X_U3.XA1.50)   48.0000               (X_U3.XA1.51)  -69.0000                   
+
+(X_U3.XA1.52)-77.38E-06               (X_U3.XA1.53)    0.0000                   
+
+(X_U3.XA1.54)    0.0000               (X_U3.XA1.55)    0.0000                   
+
+(X_U3.XA1.56)    0.0000               (X_U3.XA1.57)    0.0000                   
+
+(X_U3.XA1.58)    0.0000               (X_U3.XA1.59)    0.0000                   
+
+(X_U3.XA1.60) 1.097E-06               (X_U3.XA1.61)   -3.4000                   
+
+(X_U3.XA1.62)    3.4000               (X_U3.XA1.63) 1.097E-06                   
+
+(X_U3.XA1.64)-5.500E-06               (X_U3.XA2.34) 11.10E-06                   
+
+(X_U3.XA2.35) 4.500E-06               (X_U3.XA2.36)   -3.2700                   
+
+(X_U3.XA2.37)    3.2700               (X_U3.XA2.43) 1.634E-06                   
+
+(X_U3.XA2.44) 78.02E-06               (X_U3.XA2.47)    0.0000                   
+
+(X_U3.XA2.48)    0.0000               (X_U3.XA2.49) 4.500E-06                   
+
+(X_U3.XA2.50)   48.0000               (X_U3.XA2.51)  -69.0000                   
+
+(X_U3.XA2.52) 81.98E-06               (X_U3.XA2.53)    0.0000                   
+
+(X_U3.XA2.54)    0.0000               (X_U3.XA2.55)    0.0000                   
+
+(X_U3.XA2.56)    0.0000               (X_U3.XA2.57)    0.0000                   
+
+(X_U3.XA2.58)    0.0000               (X_U3.XA2.59)    0.0000                   
+
+(X_U3.XA2.60) 11.10E-06               (X_U3.XA2.61)   -3.4000                   
+
+(X_U3.XA2.62)    3.4000               (X_U3.XA2.63) 11.10E-06                   
+
+(X_U3.XA2.64) 4.500E-06               (X_U3.XA3.206) 188.2E-06                  
+
+(X_U3.XA3.207) 814.6E-09              (X_U3.XA3.208) 182.0E-06                  
+
+(X_U3.XA3.211) 33.76E-06              (X_U3.XA3.212)-7.998E-09                  
+
+(X_U3.XA3.213)-7.998E-09              (X_U3.XA3.214)-7.998E-09                  
+
+(X_U3.XA3.215)-7.998E-09              (X_U3.XA3.216)    7.9902                  
+
+(X_U3.XA3.217)    7.9902              (X_U3.XA3.218)   -7.9898                  
+
+(X_U3.XA3.219)   -7.9898              (X_U3.XA3.220)    5.0000                  
+
+(X_U3.XA3.221)  -11.0000              (X_U3.XA3.222)    0.0000                  
+
+(X_U3.XA3.223)    0.0000              (X_U3.XA3.224)    7.9902                  
+
+(X_U3.XA3.225)   -7.9898              (X_U3.XA3.226)   48.0000                  
+
+(X_U3.XA3.227)  -69.0000              (X_U3.XA3.228) 188.2E-06                  
+
+(X_U3.XA3.229)    0.0000              (X_U3.XA3.230)    0.0000                  
+
+(X_U3.XA3.231)    0.0000              (X_U3.XA3.232)    0.0000                  
+
+(X_U3.XA3.233)    0.0000              (X_U3.XA3.234)    0.0000                  
+
+(X_U3.XA3.235)    3.2700              (X_U3.XA3.236)   -3.2700                  
+
+(X_U3.XA3.237)    3.2700              (X_U3.XA3.238)   -3.2700                  
+
+(X_U3.XA3.239)    0.0000              (X_U3.XA3.240)    0.0000                  
+
+(X_U3.XA3.241)    0.0000              (X_U3.XA3.242)    0.0000                  
+
+(X_U3.XA3.243)    0.0000              (X_U3.XA3.244) 59.86E-06                  
+
+(X_U3.XA3.245)   -3.4000              (X_U3.XA3.246)    3.4000                  
+
+(X_U3.XA3.247) 59.86E-06              (X_U3.XA3.248) 53.26E-06                  
+
+(X_U3.XA3.249) 53.26E-06              (X_U3.XA3.VCLP) 188.2E-06                 
+
+(X_U3.XA1.IN_32)    3.3000            (X_U3.XA1.IN_33)   -3.3000                
+
+(X_U3.XA2.IN_32)    3.3000            (X_U3.XA2.IN_33)   -3.3000                
+
+(X_U3.XA1.OUT_45)-3.301E-06           (X_U3.XA1.OUT_46) 3.297E-06               
+
+(X_U3.XA1.XE_N.5)    0.0000           (X_U3.XA1.XU1.67)    -.0017               
+
+(X_U3.XA1.XU1.68)-21.62E-09           (X_U3.XA1.XU1.69)    -.0017               
+
+(X_U3.XA1.XU1.70)    -.0017           (X_U3.XA1.XU1.71)    -.0017               
+
+(X_U3.XA1.XU1.72)    -.0013           (X_U3.XA1.XU1.73)    -.0017               
+
+(X_U3.XA1.XU1.74)    -.0017           (X_U3.XA1.XU1.75)    -.0017               
+
+(X_U3.XA1.XU1.76)    -.0017           (X_U3.XA1.XU1.77)    -.0017               
+
+(X_U3.XA1.XU2.82) 26.37E-09           (X_U3.XA1.XU2.83) 3.297E-06               
+
+(X_U3.XA1.XU2.84)     .0110           (X_U3.XA1.XU2.85) 3.297E-06               
+
+(X_U3.XA1.XU3.78)-471.5E-09           (X_U3.XA1.XU3.79)-3.300E-06               
+
+(X_U3.XA1.XU3.80)    -.5775           (X_U3.XA1.XU3.81)-3.300E-06               
+
+(X_U3.XA2.OUT_45)-3.301E-06           (X_U3.XA2.OUT_46) 3.297E-06               
+
+(X_U3.XA2.XE_N.5)    0.0000           (X_U3.XA2.XU1.67)     .0015               
+
+(X_U3.XA2.XU1.68) 18.81E-09           (X_U3.XA2.XU1.69)     .0015               
+
+(X_U3.XA2.XU1.70)     .0015           (X_U3.XA2.XU1.71)     .0015               
+
+(X_U3.XA2.XU1.72)     .0011           (X_U3.XA2.XU1.73)     .0015               
+
+(X_U3.XA2.XU1.74)     .0015           (X_U3.XA2.XU1.75)     .0015               
+
+(X_U3.XA2.XU1.76)     .0015           (X_U3.XA2.XU1.77)     .0015               
+
+(X_U3.XA2.XU2.82) 26.37E-09           (X_U3.XA2.XU2.83) 3.297E-06               
+
+(X_U3.XA2.XU2.84)     .0110           (X_U3.XA2.XU2.85) 3.297E-06               
+
+(X_U3.XA2.XU3.78)-471.5E-09           (X_U3.XA2.XU3.79)-3.300E-06               
+
+(X_U3.XA2.XU3.80)    -.5775           (X_U3.XA2.XU3.81)-3.300E-06               
+
+(X_U3.XA3.IN_187)   -3.3000           (X_U3.XA3.IN_188)    3.3000               
+
+(X_U3.XA3.XE_N.5)    0.0000           (X_U3.XA3.XU1.67)     .0023               
+
+(X_U3.XA3.XU1.68) 29.32E-09           (X_U3.XA3.XU1.69)     .0023               
+
+(X_U3.XA3.XU1.70)     .0023           (X_U3.XA3.XU1.71)     .0023               
+
+(X_U3.XA3.XU1.72)     .0018           (X_U3.XA3.XU1.73)     .0023               
+
+(X_U3.XA3.XU1.74)     .0023           (X_U3.XA3.XU1.75)     .0023               
+
+(X_U3.XA3.XU1.76)     .0023           (X_U3.XA3.XU1.77)     .0023               
+
+(X_U3.XA3.XU2.82) 26.37E-09           (X_U3.XA3.XU2.83) 3.297E-06               
+
+(X_U3.XA3.XU2.84)     .0110           (X_U3.XA3.XU2.85) 3.297E-06               
+
+(X_U3.XA3.XU3.78)-471.5E-09           (X_U3.XA3.XU3.79)-3.300E-06               
+
+(X_U3.XA3.XU3.80)    -.5775           (X_U3.XA3.XU3.81)-3.300E-06               
+
+(X_U3.XA1.XI_NN.3)    0.0000          (X_U3.XA1.XI_NN.5)    0.0000              
+
+(X_U3.XA1.XI_NP.3)    0.0000          (X_U3.XA1.XI_NP.5)    0.0000              
+
+(X_U3.XA2.XI_NN.3)    0.0000          (X_U3.XA2.XI_NN.5)    0.0000              
+
+(X_U3.XA2.XI_NP.3)    0.0000          (X_U3.XA2.XI_NP.5)    0.0000              
+
+(X_U3.XA3.OUT_209)-3.301E-06          (X_U3.XA3.OUT_210) 3.297E-06              
+
+(X_U3.XA3.VCC_CLP)    3.2700          (X_U3.XA3.VEE_CLP)   -3.2700              
+
+(X_U3.XA3.XI_NN.3)    0.0000          (X_U3.XA3.XI_NN.5)    0.0000              
+
+(X_U3.XA3.XI_NP.3)    0.0000          (X_U3.XA3.XI_NP.5)    0.0000              
+
+(X_U3.XA1.CLAMP_28)-77.38E-06         (X_U3.XA1.CLAWN_21)    0.0000             
+
+(X_U3.XA1.CLAWP_22)    0.0000         (X_U3.XA1.SW_OL_29)    0.0000             
+
+(X_U3.XA1.VIMON_24)-2.363E-06         (X_U3.XA2.CLAMP_28) 81.98E-06             
+
+(X_U3.XA2.CLAWN_21)    0.0000         (X_U3.XA2.CLAWP_22)    0.0000             
+
+(X_U3.XA2.SW_OL_29)    0.0000         (X_U3.XA2.VIMON_24) 1.634E-06             
+
+(X_U3.XA1.VOUT_S_23)-72.82E-06        (X_U3.XA1.VSENSE_27)-77.38E-06            
+
+(X_U3.XA1.ZO_OUT_40)-72.82E-06        (X_U3.XA2.VOUT_S_23) 78.02E-06            
+
+(X_U3.XA2.VSENSE_27) 81.98E-06        (X_U3.XA2.ZO_OUT_40) 78.02E-06            
+
+(X_U3.XA3.CLAMP_195) 188.2E-06        (X_U3.XA3.SW_OL_196)    0.0000            
+
+(X_U3.XA3.VIMON_192) 814.6E-09        (X_U3.XA1.AOL_INN_41) 1.097E-06           
+
+(X_U3.XA1.AOL_INP_42) 1.097E-06       (X_U3.XA2.AOL_INN_41) 11.10E-06           
+
+(X_U3.XA2.AOL_INP_42) 11.10E-06       (X_U3.XA3.VOUT_S_191) 182.0E-06           
+
+(X_U3.XA3.VSENSE_194) 188.2E-06       (X_U3.XA3.ZO_OUT_203) 182.0E-06           
+
+(X_U3.XA1.CL_CLAMP_25)-77.38E-06      (X_U3.XA1.XU1.4_A0_66)-2.225E-09          
+
+(X_U3.XA1.XU1.OUT2_65)-77.38E-06      (X_U3.XA1.ZO_CLEFT_38)    -.0017          
+
+(X_U3.XA2.CL_CLAMP_25) 81.98E-06      (X_U3.XA2.XU1.4_A0_66) 2.358E-09          
+
+(X_U3.XA2.XU1.OUT2_65) 81.98E-06      (X_U3.XA2.ZO_CLEFT_38)     .0015          
+
+(X_U3.XA3.AOL_INN_204) 59.86E-06      (X_U3.XA3.AOL_INP_205) 59.86E-06          
+
+(X_U3.XA3.XU1.4_A0_66) 5.413E-09      (X_U3.XA3.XU1.OUT2_65) 188.2E-06          
+
+(X_U3.XA1.ZO_CRIGHT_39)-15.18E-06     (X_U3.XA2.ZO_CRIGHT_39) 13.20E-06         
+
+(X_U3.XA3.CL_CLAMP_189) 188.2E-06     (X_U3.XA3.ZO_CLEFT_201)     .0023         
+
+(X_U3.XA1.CLAW_CLAMP_26)-77.38E-06    (X_U3.XA2.CLAW_CLAMP_26) 81.98E-06        
+
+(X_U3.XA3.ZO_CRIGHT_202) 20.58E-06    (X_U3.XA1.ESD_INA333N_30) 1.097E-06       
+
+(X_U3.XA1.ESD_INA333P_31)-5.500E-06   (X_U3.XA2.ESD_INA333N_30) 11.10E-06       
+
+(X_U3.XA2.ESD_INA333P_31) 4.500E-06   (X_U3.XA3.CLAW_CLAMP_193) 188.2E-06       
+
+(X_U3.XA3.ESD_INA333N_197) 59.86E-06  (X_U3.XA3.ESD_INA333P_198) 33.76E-06  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -5.000E-05
+    V_V2        -5.000E-05
+    V_V5        -2.915E-14
+    X_U3.XA1.V_GRN   6.900E-11
+    X_U3.XA1.V_GRP  -4.800E-11
+    X_U3.XA1.V4  -2.363E-09
+    X_U3.XA1.VCLAWN   3.271E-12
+    X_U3.XA1.VCLAWP  -3.271E-12
+    X_U3.XA1.VCM_MAX  -3.400E-12
+    X_U3.XA1.VCM_MIN   3.400E-12
+    X_U3.XA2.V_GRN   6.900E-11
+    X_U3.XA2.V_GRP  -4.800E-11
+    X_U3.XA2.V4   1.634E-09
+    X_U3.XA2.VCLAWN   3.271E-12
+    X_U3.XA2.VCLAWP  -3.271E-12
+    X_U3.XA2.VCM_MAX  -3.400E-12
+    X_U3.XA2.VCM_MIN   3.400E-12
+    X_U3.XA3.V_GRN   6.900E-11
+    X_U3.XA3.V_GRP  -4.800E-11
+    X_U3.XA3.V_ISCN   1.100E-11
+    X_U3.XA3.V_ISCP  -5.000E-12
+    X_U3.XA3.V_ORN   0.000E+00
+    X_U3.XA3.V_ORP   0.000E+00
+    X_U3.XA3.V4   8.146E-10
+    X_U3.XA3.V11   7.998E-09
+    X_U3.XA3.V12  -7.998E-09
+    X_U3.XA3.VCM_MAX  -3.400E-12
+    X_U3.XA3.VCM_MIN   3.400E-12
+
+    TOTAL POWER DISSIPATION   3.30E-04  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/06/25 15:45:10 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Prueba"  [ C:\Users\Ronal\Downloads\Proyecto Diseño\Simulaciones\Sensado\1\Prueba_project-PSpiceFiles\SCHEMA
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        2.31
+

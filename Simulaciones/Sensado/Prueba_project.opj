@@ -1,0 +1,160 @@
+(ExpressProject "Prueba_project"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File
+         "D:\Cadence\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\analog.olb"
+        (DisplayName
+           "D:\Cadence\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\analog.olb")
+        (Type "Schematic Library"))
+      (File
+         "D:\Cadence\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\breakout.olb"
+        (DisplayName
+           "D:\Cadence\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\breakout.olb")
+        (Type "Schematic Library"))
+      (File
+         "D:\Cadence\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\source.olb"
+        (DisplayName
+           "D:\Cadence\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\source.olb")
+        (Type "Schematic Library"))
+      (File
+         "D:\Cadence\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\sourcstm.olb"
+        (DisplayName
+           "D:\Cadence\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\sourcstm.olb")
+        (Type "Schematic Library"))
+      (File
+         "D:\Cadence\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\special.olb"
+        (DisplayName
+           "D:\Cadence\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\special.olb")
+        (Type "Schematic Library")))
+    (NoModify)
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "1")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "TRUE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (File ".\prueba_project.dsn"
+      (Type "Schematic Design")))
+  (Folder "Outputs"
+    (File ".\prueba_project-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\prueba_project-pspicefiles\schematic1\prueba.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\prueba_project-pspicefiles\schematic1\prueba.sim"
+        (DisplayName "SCHEMATIC1-Prueba")
+        (Type "PSpice Profile"))))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (INA333
+      (FullPartName "INA333.Normal")
+      (LibraryName "C:\USERS\RONAL\DOWNLOADS\INA333.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName
+         "D:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VCC
+      (LibraryName
+         "D:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VDRH05B011
+      (FullPartName "VDRH05B011.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\THERMISTOR_VISHAY.OLB")
+      (DeviceIndex "0"))
+    (AD620/AD
+      (FullPartName "AD620/AD.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANLG_DEV.OLB")
+      (DeviceIndex "0"))
+    (OPAx333
+      (FullPartName "OPAx333.Normal")
+      (LibraryName "C:\USERS\RONAL\DOWNLOADS\OPAX333.OLB")
+      (DeviceIndex "0"))
+    (MCP6001
+      (FullPartName "MCP6001.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\MICROCHIP_OPAMP.OLB")
+      (DeviceIndex "0"))
+    (ICL7660AMJA883B
+      (FullPartName "ICL7660AMJA883B.Normal")
+      (LibraryName
+         "C:\USERS\RONAL\DOWNLOADS\ORCADCAPTUREOLB\ORCADCAPTUREOLB.OLB")
+      (DeviceIndex "0"))
+    (TPS63020_TRANS
+      (FullPartName "TPS63020_TRANS.Normal")
+      (LibraryName "C:\USERS\RONAL\DOWNLOADS\TPS63020_TRANS.OLB")
+      (DeviceIndex "0"))
+    (L
+      (FullPartName "L.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VDRH05B014
+      (FullPartName "VDRH05B014.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\THERMISTOR_VISHAY.OLB")
+      (DeviceIndex "0"))
+    (IAC
+      (FullPartName "IAC.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (IDC
+      (FullPartName "IDC.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VSRC
+      (FullPartName "VSRC.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VSTIM
+      (FullPartName "VSTIM.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\SOURCSTM.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory "C:\Users\Ronal\Downloads")
+  (MPSSessionName "Ronald Páez")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Outputs"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 204"))
+      (Tab 0))))

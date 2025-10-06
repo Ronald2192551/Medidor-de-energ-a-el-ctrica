@@ -1,0 +1,13 @@
+* source TPS63020_TRANS
+C_C4         0 VIN  10u  
+C_C7         0 VOUT  22u  
+L_L1         L1 L2  1.5u  
+R_R2         0 FB  180k  
+C_C10         0 VIN  10u  
+C_C3         0 EN  100n  
+C_C5         0 VOUT  22u  
+R_R8         PG VOUT  1MEG  
+R_R1         FB VOUT  1MEG  
+C_C6         0 VOUT  22u  
+V_Bateria         VIN 0 3.7
+X_U1         L1 VIN EN EN EN 0 0 PG FB VOUT L2 TPS63020_TRANS

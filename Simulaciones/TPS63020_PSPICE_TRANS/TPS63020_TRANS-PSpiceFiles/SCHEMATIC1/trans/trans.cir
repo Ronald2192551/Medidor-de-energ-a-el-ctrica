@@ -1,0 +1,26 @@
+** Profile: "SCHEMATIC1-trans"  [ C:\Users\Ronal\Downloads\Proyecto Diseño\Simulaciones\TPS63020_PSPICE_TRANS\tps63020_trans-pspicefiles\schematic1\trans.sim ] 
+
+** Creating circuit file "trans.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../tps63020_trans.lib" 
+* From [PSPICE NETLIST] section of D:\Cadence\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 800u 0 20n 
+.OPTIONS PREORDER
+.OPTIONS ADVCONV
+.OPTIONS ABSTOL= 10n
+.OPTIONS ITL1= 1500
+.OPTIONS ITL2= 400
+.OPTIONS ITL4= 400
+.OPTIONS VNTOL= 10u
+.PROBE64 V(alias(*)) I(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

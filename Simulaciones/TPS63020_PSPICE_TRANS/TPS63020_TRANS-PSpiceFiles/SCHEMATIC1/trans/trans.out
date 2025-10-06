@@ -1,0 +1,462 @@
+
+**** 10/06/25 15:40:39 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ C:\Users\Ronal\Downloads\Proyecto Diseño\Simulaciones\TPS63020_PSPICE_TRANS\tps63020_trans-pspicef
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "trans.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../tps63020_trans.lib" 
+* From [PSPICE NETLIST] section of D:\Cadence\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 800u 0 20n 
+.OPTIONS PREORDER
+.OPTIONS ADVCONV
+.OPTIONS ABSTOL= 10n
+.OPTIONS ITL1= 1500
+.OPTIONS ITL2= 400
+.OPTIONS ITL4= 400
+.OPTIONS VNTOL= 10u
+.PROBE64 V(alias(*)) I(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TPS63020_TRANS
+C_C4         0 VIN  10u  
+C_C7         0 VOUT  22u  
+L_L1         L1 L2  1.5u  
+R_R2         0 FB  180k  
+C_C10         0 VIN  10u  
+C_C3         0 EN  100n  
+C_C5         0 VOUT  22u  
+R_R8         PG VOUT  1MEG  
+R_R1         FB VOUT  1MEG  
+C_C6         0 VOUT  22u  
+V_Bateria         VIN 0 3.7
+X_U1         L1 VIN EN EN EN 0 0 PG FB VOUT L2 TPS63020_TRANS
+
+**** RESUMING trans.cir ****
+.END
+
+**** 10/06/25 15:40:39 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ C:\Users\Ronal\Downloads\Proyecto Diseño\Simulaciones\TPS63020_PSPICE_TRANS\tps63020_trans-pspicef
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_D1            X_U1.X_U4_U2.dd X_U1.X_U4_U3.dd X_U1.X_U4_U1.dd 
+          IS    1.000000E-15    1.000000E-15    1.000000E-15    1.000000E-15 
+           N     .1              .01             .01             .01         
+          RS     .05                                                         
+          TT   10.000000E-12   10.000000E-12   10.000000E-12   10.000000E-12 
+
+
+               X_U1.X_U4_U4.dd 
+          IS    1.000000E-15 
+           N     .01         
+          TT   10.000000E-12 
+
+
+**** 10/06/25 15:40:39 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ C:\Users\Ronal\Downloads\Proyecto Diseño\Simulaciones\TPS63020_PSPICE_TRANS\tps63020_trans-pspicef
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.X_U2_U31.S1 
+         RON    1            
+        ROFF    1.000000E+09 
+         VON     .75         
+        VOFF     .25         
+
+
+               X_U1.X_U2_S4._U2_S4 
+         RON    1.000000E-03 
+        ROFF   10.000000E+06 
+         VON     .5          
+        VOFF     .2          
+
+
+               X_U1.X_U2_S5._U2_S5 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON     .8          
+        VOFF     .2          
+
+
+               X_U1.X_U2_S6._U2_S6 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON     .8          
+        VOFF     .2          
+
+
+               X_U1.X_U4_S1._U4_S1 
+         RON   10.000000E+06 
+        ROFF    1            
+         VON     .8          
+        VOFF     .2          
+
+
+               X_U1.X_U4_S2._U4_S2 
+         RON   10.000000E+06 
+        ROFF    1            
+         VON     .8          
+        VOFF     .2          
+
+
+               X_U1.X_U5_S4._U5_S4 
+         RON   10.000000E+06 
+        ROFF    1.000000E-03 
+         VON     .5          
+        VOFF     .2          
+
+
+               X_U1.X_U5_S1._U5_S1 
+         RON   55.000000E+06 
+        ROFF    4.000000E+03 
+         VON     .8          
+        VOFF     .2          
+
+
+               X_U1.X_U3_S2._U3_S2 
+         RON     .045        
+        ROFF    1.000000E+06 
+         VON     .8          
+        VOFF     .2          
+
+
+               X_U1.X_U3_S4._U3_S4 
+         RON     .045        
+        ROFF    1.000000E+06 
+         VON     .8          
+        VOFF     .2          
+
+
+               X_U1.X_U3_S1._U3_S1 
+         RON   50            
+        ROFF  100.000000E+03 
+         VON     .75         
+        VOFF     .25         
+
+
+               X_U1.X_U3_S5._U3_S5 
+         RON     .07         
+        ROFF    1.000000E+06 
+         VON     .8          
+        VOFF     .2          
+
+
+               X_U1.X_U3_S3._U3_S3 
+         RON     .07         
+        ROFF    1.000000E+06 
+         VON     .8          
+        VOFF     .2          
+
+
+WARNING(ORPSIM-16534): Using high values of ITL4 for Speed Level > 0 may increase total simulation job time.
+
+**** 10/06/25 15:40:39 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ C:\Users\Ronal\Downloads\Proyecto Diseño\Simulaciones\TPS63020_PSPICE_TRANS\tps63020_trans-pspicef
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   EN)    3.7000  (   FB) 6.947E-09  (   L1) 129.5E-09  (   L2) 129.5E-09      
+
+(   PG) 181.4E-12  (  VIN)    3.7000  ( VOUT) 45.54E-09  (X_U1.PS)     .9998    
+
+(X_U1.V2)     .9867                   (X_U1.V3)    1.2333                       
+
+(X_U1.V4)     .0618                   (X_U1.CLK)    0.0000                      
+
+(X_U1.VCA)     .1225                  (X_U1.VVA)     .5110                      
+
+(X_U1.IAVG)     .0110                 (X_U1.ISEN) 3.700E-06                     
+
+(X_U1.VREF)     .5000                 (X_U1.FAULT)    0.0000                    
+
+(X_U1.ILIMIT)     .5900               (X_U1.U4_FB2) 6.947E-09                   
+
+(X_U1.BUCKDRV)    0.0000              (X_U1.ENLOGIC)    1.0000                  
+
+(X_U1.PSOFF_N)    1.0000              (X_U1.VIN_BUF)    3.7000                  
+
+(X_U1.BOOSTDRV)    0.0000             (X_U1.BUCKRAMP) 6.216E-06                 
+
+(X_U1.N6067255)    1.0000             (X_U1.BOOSTRAMP)    1.2633                
+
+(X_U1.N16629194)    1.0000            (X_U1.U1_N170632)    0.0000               
+
+(X_U1.U1_N171118)    0.0000           (X_U1.U1_N174794)    0.0000               
+
+(X_U1.U1_N175129)    0.0000           (X_U1.U1_N176597)     .9999               
+
+(X_U1.U1_N176948)     .9999           (X_U1.U1_N184433)    0.0000               
+
+(X_U1.U1_N185413)    0.0000           (X_U1.U1_N185976)    0.0000               
+
+(X_U1.U1_N186143)    0.0000           (X_U1.U2_N124395) 6.216E-06               
+
+(X_U1.U2_N126085)    5.0000           (X_U1.U2_N126109) 96.51E-15               
+
+(X_U1.U2_N128582)-96.51E-15           (X_U1.U2_RAMPDIS)    0.0000               
+
+(X_U1.U3_N148451) 3.700E-06           (X_U1.U3_N148856) 3.700E-06               
+
+(X_U1.U3_N149923)    3.7000           (X_U1.U3_N162195)    0.0000               
+
+(X_U1.U3_N166627)    0.0000           (X_U1.U3_N167831)    0.0000               
+
+(X_U1.U3_N176320)    0.0000           (X_U1.U3_N178130)    1.0000               
+
+(X_U1.U3_N179660)    1.0000           (X_U1.U4_N134364)     .5100               
+
+(X_U1.U4_N137240)     .5000           (X_U1.U4_N138646) 612.7E-12               
+
+(X_U1.U4_VVA_ACT)     .5000           (X_U1.U3_N1571031) 3.700E-06              
+
+(X_U1.U4_VVA_PROG)     .5110          (X_U1.U5_N6059017)    1.5000              
+
+(X_U1.U5_N6062862)    1.0000          (X_U1.U5_N6063005)    1.0000              
+
+(X_U1.U5_N6063555)    1.0000          (X_U1.U5_N6096022)     .5100              
+
+(X_U1.U5_N6097544)    1.0000          (X_U1.U5_N6100335)     .9999              
+
+(X_U1.U5_N6101882)    0.0000          (X_U1.U5_N6104039)    0.0000              
+
+(X_U1.U5_N6105639)     .5000          (X_U1.U5_N6123425)     .1000              
+
+(X_U1.U5_N6123654)    0.0000          (X_U1.U5_N6123789)    1.0000              
+
+(X_U1.U5_N6126241)     .5800          (X_U1.U5_N6144180) 1.144E-27              
+
+(X_U1.U5_N6144664)-1.143E-18          (X_U1.U5_N6157234)   13.8000              
+
+(X_U1.U5_N6157414)     .4000          (X_U1.U5_N6157424)     .4000              
+
+(X_U1.U5_N6157480)     .4000          (X_U1.U5_N6157516)   13.8000              
+
+(X_U1.U5_N6157610)     .4000          (X_U1.U5_N6162282)     .4000              
+
+(X_U1.U5_N6165616) 45.54E-09          (X_U1.U5_N6166485)    3.7000              
+
+(X_U1.U5_VINLIMIT)    4.0000          (X_U1.X_U2_U31.CH)    0.0000              
+
+(X_U1.PS_SYNCLOGIC)     .9999         (X_U1.U2_N16588429)    1.2333             
+
+(X_U1.U2_N16663404)    5.0000         (X_U1.U2_N16666872)    0.0000             
+
+(X_U1.U2_N16666990)    0.0000         (X_U1.U2_N16667046) 5.060E-06             
+
+(X_U1.U2_N16667112)    5.0000         (X_U1.U2_N16667136)    0.0000             
+
+(X_U1.U2_N16667168)    0.0000         (X_U1.U2_N16667346)    0.0000             
+
+(X_U1.U3_FAULT_BAR)    1.0000         (X_U1.U3_N16705010)    1.0000             
+
+(X_U1.U3_N16705153)    1.0000         (X_U1.U3_N16705859)    1.0000             
+
+(X_U1.U3_N16706290)    0.0000         (X_U1.U3_N16709141)    0.0000             
+
+(X_U1.U3_N16710232)    1.0000         (X_U1.U3_N16710240)    1.0000             
+
+(X_U1.U3_N16710738)    1.0000         (X_U1.U3_N16713177)    0.0000             
+
+(X_U1.U3_N16715337) 2.553E-30         (X_U1.U4_N16542445)     .5563             
+
+(X_U1.U4_N16544672)     .9867         (X_U1.U5_FAULT_BAR)    1.0000             
+
+(X_U1.U5_FINALVOUT)     .4000         (X_U1.U5_N16691319)    1.0000             
+
+(X_U1.U5_N16692251)    0.0000         (X_U1.U5_N16697749)   -1.5000             
+
+(X_U1.U5_N16697981)   -1.9000         (X_U1.U5_N16699386)   -1.5000             
+
+(X_U1.U5_N16703225)-2.500E-09         (X_U1.U5_N16703504)-2.500E-09             
+
+(X_U1.U5_N16705913)    1.9000         (X_U1.U5_N16707701)    1.9000             
+
+(X_U1.U5_N16708681)    1.9000         (X_U1.U5_N16714820)     .4000             
+
+(X_U1.U5_N16727053)    1.0000         (X_U1.U5_N16754558) 1.667E-09             
+
+(X_U1.U5_N16754622)    1.1000         (X_U1.U5_N16754764) 1.667E-09             
+
+(X_U1.U5_N61617881)     .4000         (X_U1.U5_VOUTLIMIT)     .4000             
+
+(X_U1.X_U1_U37.MY5)    1.0000         (X_U1.X_U1_U37.Qbr)    1.0000             
+
+(X_U1.X_U1_U37.Qqq) 2.002E-15         (X_U1.X_U1_U38.MY5)    1.0000             
+
+(X_U1.X_U1_U38.Qbr)    1.0000         (X_U1.X_U1_U38.Qqq) 2.002E-15             
+
+(X_U1.X_U5_U38.MY5)    1.0000         (X_U1.X_U5_U38.Qbr)    1.0000             
+
+(X_U1.X_U5_U38.Qqq)     .0100         (X_U1.U4_N165153511)     .5110            
+
+(X_U1.U4_N165156330)     .5000        (X_U1.U5_GAINFACTOR) 1.667E-09            
+
+(X_U1.U5_N166917621)    0.0000        (X_U1.U5_N167226131)    4.0000            
+
+(X_U1.U5_N167473441)     .4000        (X_U1.X_U1_U33.Yint)    0.0000            
+
+(X_U1.X_U1_U34.Yint)    0.0000        (X_U1.X_U1_U35.YINT)    0.0000            
+
+(X_U1.X_U1_U36.YINT)    0.0000        (X_U1.X_U1_U37.Qint) 2.002E-15            
+
+(X_U1.X_U1_U38.Qint) 2.002E-15        (X_U1.X_U1_U39.YINT)    0.0000            
+
+(X_U1.X_U1_U40.YINT)    0.0000        (X_U1.X_U1_U41.YINT)    0.0000            
+
+(X_U1.X_U1_U42.YINT)    0.0000        (X_U1.X_U2_U21.YINT)    0.0000            
+
+(X_U1.X_U2_U26.YINT)    0.0000        (X_U1.X_U2_U27.YINT)    0.0000            
+
+(X_U1.X_U2_U29.YINT)    0.0000        (X_U1.X_U2_U31.MEAS)    0.0000            
+
+(X_U1.X_U3_U24.YINT)    1.0000        (X_U1.X_U3_U25.YINT)    1.0000            
+
+(X_U1.X_U3_U26.YINT)    0.0000        (X_U1.X_U3_U27.YINT)    1.0000            
+
+(X_U1.X_U3_U28.YINT)    0.0000        (X_U1.X_U3_U31.YINT)    1.0000            
+
+(X_U1.X_U3_U33.YINT)    0.0000        (X_U1.X_U3_U35.YINT)    0.0000            
+
+(X_U1.X_U3_U37.YINT)    1.0000        (X_U1.X_U3_U40.YINT)    0.0000            
+
+(X_U1.X_U3_U41.YINT)    1.0000        (X_U1.X_U3_U42.YINT)    1.0000            
+
+(X_U1.X_U5_U29.Yint)    1.0000        (X_U1.X_U5_U30.Yint)    1.0000            
+
+(X_U1.X_U5_U31.YINT)    1.0000        (X_U1.X_U5_U37.Yint)    0.0000            
+
+(X_U1.X_U5_U38.Qint)     .0100        (X_U1.X_U5_U39.Yint)    1.0000            
+
+(X_U1.X_U5_U43.Yint)    1.0000        (X_U1.X_U5_U44.Yint)    0.0000            
+
+(X_U1.X_U5_U47.YINT)    1.0000        (X_U1.X_U5_U48.YINT)    0.0000            
+
+(X_U1.X_U5_U49.YINT)    0.0000        (X_U1.X_U5_U50.YINT)    1.0000            
+
+(X_U1.X_U5_U51.YINT)    0.0000        (X_U1.X_U5_U52.YINT)    1.0000            
+
+(X_U1.U3_BUCKDRV_PRE)    0.0000       (X_U1.U5_DELAYENABLE)    0.0000           
+
+(X_U1.X_U1_U37.MYVSS)    0.0000       (X_U1.X_U1_U37.Qqqd1)    0.0000           
+
+(X_U1.X_U1_U38.MYVSS)    0.0000       (X_U1.X_U1_U38.Qqqd1)    0.0000           
+
+(X_U1.X_U2_U31.RESET)    1.0000       (X_U1.X_U3_U32.YINT1)    1.0000           
+
+(X_U1.X_U3_U32.YINT2)    1.0000       (X_U1.X_U3_U32.YINT3)    1.0000           
+
+(X_U1.X_U3_U34.YINT1)    0.0000       (X_U1.X_U3_U34.YINT2)    0.0000           
+
+(X_U1.X_U3_U34.YINT3)    0.0000       (X_U1.X_U3_U36.YINT1)    0.0000           
+
+(X_U1.X_U3_U36.YINT2)    0.0000       (X_U1.X_U3_U36.YINT3)    0.0000           
+
+(X_U1.X_U3_U38.YINT1)    1.0000       (X_U1.X_U3_U38.YINT2)    1.0000           
+
+(X_U1.X_U3_U38.YINT3)    1.0000       (X_U1.X_U3_U39.YINT1)    0.0000           
+
+(X_U1.X_U3_U39.YINT2)    0.0000       (X_U1.X_U3_U39.YINT3)    0.0000           
+
+(X_U1.X_U5_U38.MYVSS)    0.0000       (X_U1.X_U5_U38.Qqqd1)    0.0000           
+
+(X_U1.X_U2_U31.RESET2)    1.0000      (X_U1.X_U1_U37.X3.YINT)    0.0000         
+
+(X_U1.X_U1_U38.X3.YINT)    0.0000     (X_U1.X_U5_U38.X3.YINT)    0.0000     
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Bateria   -3.700E-06
+    X_U1.V_U2_V2  -2.530E-03
+    X_U1.V_U2_V5  -3.108E-03
+    X_U1.V_U2_V8   0.000E+00
+    X_U1.V_U2_V6  -4.826E-11
+    X_U1.V_U2_V3   0.000E+00
+    X_U1.V_U4_V1   1.850E-05
+    X_U1.V_U4_V3   1.200E-14
+    X_U1.V_U4_V4  -4.525E-09
+    X_U1.V_U4_V2   0.000E+00
+    X_U1.V_U5_V10   0.000E+00
+    X_U1.V_U5_V1   0.000E+00
+    X_U1.V_U5_V9   0.000E+00
+    X_U1.V_U5_V8  -2.500E-06
+    X_U1.V_U5_V2   0.000E+00
+    X_U1.V_U5_V5   0.000E+00
+    X_U1.V_U5_V3   0.000E+00
+    X_U1.V_U5_V7   0.000E+00
+    X_U1.X_U1_U38.V1  -1.001E-12
+    X_U1.X_U1_U38.V2   2.776E-27
+    X_U1.X_U1_U37.V1  -1.001E-12
+    X_U1.X_U1_U37.V2   2.776E-27
+    X_U1.X_U5_U38.V1  -9.910E-13
+    X_U1.X_U5_U38.V2   1.098E-14
+    X_U1.X_U3_H1.VH_U3_H1   3.700E-06
+
+    TOTAL POWER DISSIPATION   2.82E-02  WATTS
+
+
+          JOB ABORTED
+
+**** 10/06/25 15:40:39 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ C:\Users\Ronal\Downloads\Proyecto Diseño\Simulaciones\TPS63020_PSPICE_TRANS\tps63020_trans-pspicef
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =       15.55
+

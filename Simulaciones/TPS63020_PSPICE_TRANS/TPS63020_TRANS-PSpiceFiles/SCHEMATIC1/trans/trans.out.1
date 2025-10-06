@@ -1,0 +1,81 @@
+
+**** 10/04/25 10:23:10 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ C:\Users\Ronal\Imágenes\SLIM135\TPS63020_PSPICE_TRANS\tps63020_trans-pspicefiles\schematic1\trans.
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "trans.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../tps63020_trans.lib" 
+* From [PSPICE NETLIST] section of D:\Cadence\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "C:\Users\Ronal\Downloads\TPS63020_TRANS.lib" 
+---------------------------------------------------$
+ERROR(ORPSIM-16276): Can't find library
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 800u 0 20n 
+.OPTIONS STEPGMIN
+.OPTIONS PREORDER
+.OPTIONS ADVCONV
+.OPTIONS ABSTOL= 10n
+.OPTIONS ITL1= 1500
+.OPTIONS ITL2= 400
+.OPTIONS ITL4= 400
+.OPTIONS VNTOL= 10u
+.PROBE64 V(alias(*)) I(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TPS63020_TRANS
+R_R13         N66400 N66406  3m  
+R_R7         0 N66086  3m  
+R_R12         0 N66162  3m  
+R_R10         0 N66108  3m  
+L_L2         N66186 N66400  2n  
+C_C4         N664880 VIN  7u  
+C_C7         N66108 VOUT  8u  
+C_C8         N66124 VOUT  2.2u  
+L_L1         L1 N66368  1.5u  
+R_R2         0 FB  182k  
+R_R15         0 N66428  100m  
+R_R4         N66368 L2  14.4m  
+C_C10         N66162 VIN  2.2u  
+L_L3         N66406 N66418  2n  
+R_R14         N66418 VIN  3m  
+C_C3         0 N66288  0.1u  
+R_R6         0 N66062  3m  
+R_R11         0 N667820  3m  
+C_C11         N66428 N66406  150u  
+C_C9         N667820 VIN  7u  
+C_C5         N66062 VOUT  8u  
+R_R9         0 N66124  3m  
+R_R8         PG VOUT  1MEG  
+R_R1         FB VOUT  1.02MEG  
+C_C6         N66086 VOUT  8u  
+R_R5         0 N664880  3m  
+V_V1         PS_SYNC 0 2
+V_V2         N66186 0 4.2
+V_V3         EN 0 2
+R_R16         0 VOUT  3.3  
+I_I1         VOUT 0 DC 0Adc AC 0Aac
++PULSE 0 800m 500u 250n 250n 100u 1
+X_U1         L1 VIN N66288 EN PS_SYNC 0 0 PG FB VOUT L2 TPS63020_TRANS
+
+**** RESUMING trans.cir ****
+.END
+

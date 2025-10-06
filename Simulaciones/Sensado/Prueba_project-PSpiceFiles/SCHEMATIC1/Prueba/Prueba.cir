@@ -1,0 +1,20 @@
+** Profile: "SCHEMATIC1-Prueba"  [ C:\Users\Ronal\Downloads\Proyecto Diseño\Simulaciones\Sensado\1\Prueba_project-PSpiceFiles\SCHEMATIC1\Prueba.sim ] 
+
+** Creating circuit file "Prueba.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of D:\Cadence\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "C:\Users\Ronal\Downloads\INA333.LIB" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 50m 0 10u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

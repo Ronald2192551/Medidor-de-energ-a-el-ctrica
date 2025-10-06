@@ -1,0 +1,57 @@
+
+**** 10/06/25 15:44:33 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Prueba"  [ C:\Users\Ronal\Downloads\Proyecto Diseño\Simulaciones\Sensado\1\Prueba_project-PSpiceFiles\SCHEMA
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Prueba.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of D:\Cadence\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 50m 0 10u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PRUEBA_PROJECT
+R_R1         N14420 N14416  7.1k TC=0,0 
+R_R2         0 N14454  5m TC=0,0 
+V_V1         VCC 0 DC 3.3  
+V_V2         0 VEE DC 3.3  
+R_R3         N16620 N16616  330k TC=0,0 
+R_R4         N16624 N16620  330k TC=0,0 
+R_R5         N16628 N16624  330k TC=0,0 
+R_R6         0 N16628  5.87k TC=0,0 
+R_R7         N16949 N16628  1k TC=0,0 
+R_R8         N16961 0  1k TC=0,0 
+C_C2         N16961 N16949  10nF  TC=0,0 
+R_R9         N14454 N16616  12 TC=0,0 
+V_V5         N16616 0  
++SIN 0 170 60 0 0 0
+R_R11         N21020 0  1k TC=0,0 
+R_R10         VOUT N21387  1k TC=0,0 
+C_C5         N21020 VOUT  10nF  TC=0,0 
+X_U3         N14454 0 VCC VEE N21387 0 N14416 N14420 INA333
+
+**** RESUMING Prueba.cir ****
+.END
+
+ERROR(ORPSIM-15108): Subcircuit INA333 used by X_U3 is undefined
+
