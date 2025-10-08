@@ -29,6 +29,8 @@
            "D:\Cadence\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\special.olb")
         (Type "Schematic Library")))
     (NoModify)
+    (File "prueba_project.dsn"
+      (Type "Schematic Design"))
     (BuildFileAddedOrDeleted "x")
     (CompileFileAddedOrDeleted "x")
     (ANNOTATE_Scope "0")
@@ -37,34 +39,58 @@
     (ANNOTATE_Reset_References_to_1 "FALSE")
     (ANNOTATE_No_Page_Number_Change "TRUE")
     (ANNOTATE_Property_Combine "{Value}{Source Package}")
-    (PSPICE_Regenerate_Netlist_Flag "FALSE")
-    (File ".\prueba_project.dsn"
-      (Type "Schematic Design")))
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
   (Folder "Outputs"
     (File ".\prueba_project-pspicefiles\schematic1\schematic1.net"
       (Type "Report")))
   (Folder "PSpice Resources"
     (Folder "Model Libraries"
-      (Sort User))
+      (Sort User)
+      (File "..\downloads\opax333.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\downloads\opax333.lib"))
+      (File "..\downloads\ina333.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\downloads\ina333.lib")))
     (Folder "Stimulus Files"
       (Sort User))
     (Folder "Include Files"
       (Sort User))
     (Folder "Simulation Profiles"
-      (ActiveProfile ".\prueba_project-pspicefiles\schematic1\prueba.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\prueba_project-pspicefiles\schematic1\bias.sim"
+        (DisplayName "SCHEMATIC1-bias")
+        (Type "PSpice Profile"))
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\prueba_project-pspicefiles\schematic1\prueba.sim"
-        (DisplayName "SCHEMATIC1-Prueba")
+        (DisplayName "SCHEMATIC1-prueba")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\prueba_project-pspicefiles\schematic1\pru.sim"
+        (DisplayName "SCHEMATIC1-pru")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\prueba_project-pspicefiles\schematic1\prueba1.sim"
+        (DisplayName "SCHEMATIC1-Prueba1")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\prueba_project-pspicefiles\schematic1\prueba2.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\prueba_project-pspicefiles\schematic1\prueba2.sim"
+        (DisplayName "SCHEMATIC1-Prueba2")
         (Type "PSpice Profile"))))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
-    (INA333
-      (FullPartName "INA333.Normal")
-      (LibraryName "C:\USERS\RONAL\DOWNLOADS\INA333.OLB")
-      (DeviceIndex "0"))
     (0
       (LibraryName
          "D:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (OPAx333
+      (FullPartName "OPAx333.Normal")
+      (LibraryName "C:\USERS\RONAL\DOWNLOADS\OPAX333.OLB")
+      (DeviceIndex "0"))
+    (INA333
+      (FullPartName "INA333.Normal")
+      (LibraryName "C:\USERS\RONAL\DOWNLOADS\INA333.OLB")
       (DeviceIndex "0"))
     (VCC
       (LibraryName
@@ -79,10 +105,6 @@
       (FullPartName "AD620/AD.Normal")
       (LibraryName
          "D:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANLG_DEV.OLB")
-      (DeviceIndex "0"))
-    (OPAx333
-      (FullPartName "OPAx333.Normal")
-      (LibraryName "C:\USERS\RONAL\DOWNLOADS\OPAX333.OLB")
       (DeviceIndex "0"))
     (MCP6001
       (FullPartName "MCP6001.Normal")
@@ -151,10 +173,23 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
+      (Path "Design Resources" "C:\Users\Ronal\Documentos\prueba_project.dsn")
+      (Path "Design Resources" "C:\Users\Ronal\Documentos\prueba_project.dsn"
+         "SCHEMATIC1")
       (Path "Outputs"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 0 200 0 204"))
-      (Tab 0))))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 52 1152 52 295")
+        (Scroll "-4 117")
+        (Zoom "120")
+        (Occurrence "/"))
+      (Path "C:\USERS\RONAL\DOCUMENTOS\PRUEBA_PROJECT.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))))
