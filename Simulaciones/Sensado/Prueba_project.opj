@@ -176,7 +176,9 @@
       (Path "Design Resources" "C:\Users\Ronal\Documentos\prueba_project.dsn")
       (Path "Design Resources" "C:\Users\Ronal\Documentos\prueba_project.dsn"
          "SCHEMATIC1")
-      (Path "Outputs"))
+      (Path "Outputs")
+      (Select "Design Resources" "C:\Users\Ronal\Documentos\prueba_project.dsn"
+         "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -187,8 +189,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -8 -31 52 1152 52 295")
-        (Scroll "-4 234")
-        (Zoom "120")
+        (Scroll "-101 170")
+        (Zoom "100")
         (Occurrence "/"))
       (Path "C:\USERS\RONAL\DOCUMENTOS\PRUEBA_PROJECT.DSN")
       (Schematic "SCHEMATIC1")
