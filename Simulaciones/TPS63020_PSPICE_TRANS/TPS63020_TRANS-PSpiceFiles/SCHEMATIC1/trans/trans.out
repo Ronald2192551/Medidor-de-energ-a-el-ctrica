@@ -1,5 +1,5 @@
 
-**** 10/06/25 15:40:39 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 10/09/25 10:56:21 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-trans"  [ C:\Users\Ronal\Downloads\Proyecto Diseño\Simulaciones\TPS63020_PSPICE_TRANS\tps63020_trans-pspicef
 
@@ -54,7 +54,7 @@ X_U1         L1 VIN EN EN EN 0 0 PG FB VOUT L2 TPS63020_TRANS
 **** RESUMING trans.cir ****
 .END
 
-**** 10/06/25 15:40:39 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 10/09/25 10:56:21 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-trans"  [ C:\Users\Ronal\Downloads\Proyecto Diseño\Simulaciones\TPS63020_PSPICE_TRANS\tps63020_trans-pspicef
 
@@ -80,7 +80,7 @@ X_U1         L1 VIN EN EN EN 0 0 PG FB VOUT L2 TPS63020_TRANS
           TT   10.000000E-12 
 
 
-**** 10/06/25 15:40:39 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 10/09/25 10:56:21 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-trans"  [ C:\Users\Ronal\Downloads\Proyecto Diseño\Simulaciones\TPS63020_PSPICE_TRANS\tps63020_trans-pspicef
 
@@ -186,7 +186,7 @@ X_U1         L1 VIN EN EN EN 0 0 PG FB VOUT L2 TPS63020_TRANS
 
 WARNING(ORPSIM-16534): Using high values of ITL4 for Speed Level > 0 may increase total simulation job time.
 
-**** 10/06/25 15:40:39 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 10/09/25 10:56:21 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-trans"  [ C:\Users\Ronal\Downloads\Proyecto Diseño\Simulaciones\TPS63020_PSPICE_TRANS\tps63020_trans-pspicef
 
@@ -446,7 +446,7 @@ WARNING(ORPSIM-16534): Using high values of ITL4 for Speed Level > 0 may increas
 
           JOB ABORTED
 
-**** 10/06/25 15:40:39 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 10/09/25 10:56:21 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-trans"  [ C:\Users\Ronal\Downloads\Proyecto Diseño\Simulaciones\TPS63020_PSPICE_TRANS\tps63020_trans-pspicef
 
@@ -458,5 +458,5 @@ WARNING(ORPSIM-16534): Using high values of ITL4 for Speed Level > 0 may increas
 
 
 
-  Total job time (using Solver 1)   =       15.55
+  Total job time (using Solver 1)   =       73.66
 

@@ -46,37 +46,21 @@
   (Folder "PSpice Resources"
     (Folder "Model Libraries"
       (Sort User)
-      (File "..\downloads\opax333.lib"
+      (File "C:\Users\Ronal\Downloads\OPAx333.LIB"
         (Type "PSpiceLibrary")
-        (DisplayName "..\downloads\opax333.lib"))
-      (File "..\downloads\ina333.lib"
+        (DisplayName "C:\Users\Ronal\Downloads\OPAx333.LIB"))
+      (File "C:\Users\Ronal\Downloads\INA333.LIB"
         (Type "PSpiceLibrary")
-        (DisplayName "..\downloads\ina333.lib")))
+        (DisplayName "C:\Users\Ronal\Downloads\INA333.LIB")))
     (Folder "Stimulus Files"
       (Sort User))
     (Folder "Include Files"
       (Sort User))
     (Folder "Simulation Profiles"
-      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\prueba_project-pspicefiles\schematic1\bias.sim"
-        (DisplayName "SCHEMATIC1-bias")
-        (Type "PSpice Profile"))
+      (ActiveProfile ".\prueba_project-pspicefiles\schematic1\prueba.sim")
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\prueba_project-pspicefiles\schematic1\prueba.sim"
-        (DisplayName "SCHEMATIC1-prueba")
-        (Type "PSpice Profile"))
-      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\prueba_project-pspicefiles\schematic1\pru.sim"
-        (DisplayName "SCHEMATIC1-pru")
-        (Type "PSpice Profile"))
-      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\prueba_project-pspicefiles\schematic1\prueba1.sim"
-        (DisplayName "SCHEMATIC1-Prueba1")
-        (Type "PSpice Profile"))
-      (ActiveProfile ".\prueba_project-pspicefiles\schematic1\prueba2.sim")
-      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\prueba_project-pspicefiles\schematic1\prueba2.sim"
-        (DisplayName "SCHEMATIC1-Prueba2")
+        (DisplayName "SCHEMATIC1-Prueba")
         (Type "PSpice Profile"))))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
@@ -173,11 +157,14 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources" "C:\Users\Ronal\Documentos\prueba_project.dsn")
-      (Path "Design Resources" "C:\Users\Ronal\Documentos\prueba_project.dsn"
+      (Path "Design Resources"
+         "C:\Users\Ronal\Downloads\Proyecto Diseño\Simulaciones\Sensado\prueba_project.dsn")
+      (Path "Design Resources"
+         "C:\Users\Ronal\Downloads\Proyecto Diseño\Simulaciones\Sensado\prueba_project.dsn"
          "SCHEMATIC1")
       (Path "Outputs")
-      (Select "Design Resources" "C:\Users\Ronal\Documentos\prueba_project.dsn"
+      (Select "Design Resources"
+         "C:\Users\Ronal\Downloads\Proyecto Diseño\Simulaciones\Sensado\prueba_project.dsn"
          "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
@@ -189,9 +176,10 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -8 -31 52 1152 52 295")
-        (Scroll "-101 170")
+        (Scroll "-101 0")
         (Zoom "100")
         (Occurrence "/"))
-      (Path "C:\USERS\RONAL\DOCUMENTOS\PRUEBA_PROJECT.DSN")
+      (Path
+         "C:\USERS\RONAL\DOWNLOADS\PROYECTO DISEÑO\SIMULACIONES\SENSADO\PRUEBA_PROJECT.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1"))))
